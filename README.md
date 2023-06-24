@@ -5,17 +5,12 @@
 
 ## Getting Started
 
-- Add submodule
-
-```shell
-git submodule add https://github.com/eliasmeireles/flutter_storage.git  submodules/flutter_storage
-```
-
 - Add dependency
 
 ```yaml
-flutter_storage:
-  path: ./submodules/flutter_storage
+  flutter_screen:
+    git:
+      url: https://github.com/eliasmeireles/flutter_screen.git
 ```
 
 
