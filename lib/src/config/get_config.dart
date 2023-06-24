@@ -3,5 +3,11 @@ import 'package:injectable/injectable.dart';
 
 import 'get_config.config.dart';
 
-@InjectableInit(initializerName: r'$initAppDatabaseGetIt')
-void configureAppDatabaseModule(GetIt getIt) => $initAppDatabaseGetIt(getIt);
+@InjectableInit(initializerName: r'$initFlutterStorageGetIt')
+void configureFlutterStorageModule(
+    GetIt getIt,
+    String? environment,
+    EnvironmentFilter? environmentFilter,
+    ) =>
+    getIt.$initFlutterStorageGetIt(
+        environment: environment, environmentFilter: environmentFilter);
